@@ -19,8 +19,8 @@ const [endDate, setEndDate] = useState('2024-01-25');
     setLoading(true);
     try {
       const [actualsRes, forecastsRes] = await Promise.all([
-        axios.get(`http://localhost:5000/api/actuals?from=${startDate}&to=${endDate}`),
-        axios.get(`http://localhost:5000/api/forecasts?from=${startDate}&to=${endDate}`)
+        axios.get(`https://uk-wind-forecast-monitor.onrender.com/api/actuals?from=${startDate}&to=${endDate}`),
+axios.get(`https://uk-wind-forecast-monitor.onrender.com/api/forecasts?from=${startDate}&to=${endDate}`)
       ]);
 
       // Process actuals
