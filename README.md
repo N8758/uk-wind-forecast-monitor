@@ -3,9 +3,8 @@
 A full-stack web application that visualizes UK national wind power generation forecasts vs actual generation data, built as part of a Full Stack SWE challenge.
 
 ## 🔗 Live Links
-- **App**: https://your-app.vercel.app
-- **Backend**: https://your-backend.railway.app
-- **Demo Video**: https://youtube.com/your-video
+- **App**:(http://uk-wind-forecast-monitor-9f83.vercel.app/)
+- **Backend**: https://uk-wind-forecast-monitor.onrender.com/)
 
 ---
 
@@ -129,7 +128,5 @@ Analyzes wind generation reliability:
 ---
 
 ## 👤 Author
-- **Name**: Your Name
-- **Email**: your@email.com
-- **LinkedIn**: linkedin.com/in/yourprofile
-- **Wellfound**: wellfound.com/u/yourprofile
+- **Name**: Nilesh Pulate
+- **Email**:nileshpulate87@gmail.com
