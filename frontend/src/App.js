@@ -11,6 +11,7 @@ function App() {
   const [horizon, setHorizon] = useState(4);
   const [loading, setLoading] = useState(false);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchData();
   }, [startDate, endDate, horizon]);
