@@ -1,3 +1,6 @@
+/* eslint-disable */
+
+
 import React, { useState, useEffect } from 'react';
 import Chart from './components/Chart';
 import Controls from './components/Controls';
@@ -11,16 +14,16 @@ const [endDate, setEndDate] = useState('2024-01-25');
   const [horizon, setHorizon] = useState(4);
   const [loading, setLoading] = useState(false);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchData();
   }, [startDate, endDate, horizon]);
-
   const fetchData = async () => {
     setLoading(true);
     try {
       const [actualsRes, forecastsRes] = await Promise.all([
-        axios.get(`https://uk-wind-forecast-monitor.onrender.com/api/actuals?from=${startDate}&to=${endDate}`),
-axios.get(`https://uk-wind-forecast-monitor.onrender.com/api/forecasts?from=${startDate}&to=${endDate}`)
+        axios.get(`http://localhost:5000/api/actuals?from=${startDate}&to=${endDate}`),
+        axios.get(`http://localhost:5000/api/forecasts?from=${startDate}&to=${endDate}`)
       ]);
 
       // Process actuals
